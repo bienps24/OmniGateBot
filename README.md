@@ -1,170 +1,61 @@
-📌 Gatekeeper Telegram Bot
-A Professional Group & Channel Join Manager (Auto-Approve + Filters)
-
-Gatekeeper is a smart Telegram join manager bot that automatically approves or filters join requests in groups and channels.
-It supports admin commands, spam protection, filters, and per-chat configuration.
-
-Perfect for:
-
-Public communities
-
-Channels na maraming join attempts
-
-Anti-bot filtering
-
-Automated moderation
-
-🚀 Features (Option C – Pro Version)
-✅ Core Features
-
-Auto-approve join requests
-
-Works for both groups and channels
-
-Sends welcome DM in simple, universal English
-
-Error reporting to global admin
-
-Professional logging (timestamped)
-
-🔥 Smart Filters
-
-Block bots (ON/OFF)
-
-Require username (ON/OFF)
-
-Minimum username length
-
-Filter mode vs. auto mode
-
-Decline notifications sent to admin
-
-🛠 Admin Commands
-Command	Function
-/start	Shows intro
-/help	List of commands
-/status	Stats (today + total)
-/settings	Current chat configuration
-/set_mode auto/filtered/off	Set join handling mode
-/set_require_username on/off	Require username
-/set_block_bots on/off	Block accounts marked as bots
-/set_min_username_length <n>	Username length rule
-/test_join	Simulate how a join would be processed
-🧠 Configuration Modes
-AUTO
-
-Bot approves all join requests.
-
-FILTERED
-
-Bot checks:
-
-if user is bot
-
-if username required
-
-if username meets length requirement
-
-Approves or declines depending on rules.
-
-OFF
-
-Bot will not handle requests.
-(Useful if owner wants to manually check joiners.)
-
-🗂 Project Structure
-├─ main.py
-├─ requirements.txt
-├─ Procfile
-└─ README.md
-
-🔧 Installation & Setup
-1. Clone the Repo
-git clone https://github.com/<your-username>/<repo-name>.git
-
-2. Install Requirements Locally (Optional)
-pip install -r requirements.txt
-
-🔐 Environment Variables (Required in Railway)
-
-Go to:
-Railway → Project → Variables → Add Variable
-
-Name	Description
-BOT_TOKEN	Token from BotFather
-ADMIN_ID	Telegram user ID of the bot owner
-🚀 Deploy to Railway
-
-Push project to GitHub
-
-Go to Railway → New Project → Deploy from GitHub
-
-Add environment variables
-
-Railway will auto-detect Python
-
-Bot will start automatically
-
-Use logs to monitor:
-
-railway logs
-
-🤝 Contributing
-
-Pull requests are welcome.
-
-📜 License
-
-MIT License (optional)
-
-🏁 Done!
-
-The bot is now fully ready to run 24/7 on Railway.
-
-🟢 3. Paano i-setup sa GitHub (Step-by-Step)
-
-Gawa ka muna ng folder sa PC mo
-Example: gatekeeper-bot
-
-Ilagay ang files:
-
-main.py
-
-requirements.txt
-
-Procfile
-
-README.md
-
-Sa folder, right-click → Open in Terminal
-
-Mga command:
-
-git init
-git add .
-git commit -m "Initial commit - Gatekeeper Bot"
-
-
-Sa GitHub:
-
-Create ➝ New Repository
-
-Name: gatekeeper-telegram-bot
-
-DO NOT add README (meron ka na)
-
-I-link local folder to GitHub repo:
-
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-
-
-Tapos i-connect sa Railway:
-
-Railway → New Project
-
-Deploy GitHub Repo
-
-Add env vars
-
-Start service
+# 🔐 OmniGate Bot
+### Intelligent Access Control & Spam Protection for Telegram
+
+OmniGate Bot is a fully automated, smart moderation bot designed to protect Telegram groups and channels with clean, button-based configuration.
+
+## 🚀 Features
+- Auto-approve join requests (AUTO / FILTERED / OFF)
+- Bot & username filtering
+- Safe welcome verification button
+- Link blocking & banned words
+- Warnings system (mute/kick)
+- Anti-flood spam control
+- Auto-delete service messages
+- Strict/raid mode
+- Admin-only settings panel with buttons
+- `/mychats` personal admin list
+- Group statistics (`/status`)
+
+## 🛠 Deployment
+1. Upload to GitHub  
+2. Add to Railway  
+3. Set environment variables:  
+   - `BOT_TOKEN`  
+   - `ADMIN_ID`  
+4. Start the bot — done.
+
+## 👨‍💻 Author
+Created by **@bienps24** (also known as **bienwashere**)  
+
+MIT License
+
+Copyright (c) 2025 
+Author: Bien (GitHub: bienps24 / bienwashere)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Maintainer](https://img.shields.io/badge/Maintainer-bienps24-blue)
+![Bot Type](https://img.shields.io/badge/Telegram-Bot-26A5E4)
+
+![Platform](https://img.shields.io/badge/Platform-Railway-purple)
+![Security](https://img.shields.io/badge/Security-Enhanced-orange)
